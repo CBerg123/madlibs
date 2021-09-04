@@ -1,0 +1,77 @@
+#include <iostream>
+
+int main() {
+    
+    
+    //Assign variables with string, have people enter answer using cin
+    
+    
+    std::cout << "Welcome To Madlibs\n";
+    
+    std::string teacherName;
+    
+    std::cout << "Enter your teacher's name:\n";
+    
+    std::cin >> teacherName;
+    
+    
+    std::string feeling;
+    
+    std::cout << "Enter a feeling:\n";
+    
+    std::cin >> feeling;
+    
+    
+    std::string animal;
+    
+    std::cout << "Enter an animal:\n";
+    
+    std::cin >> animal;
+    
+    //use int here maybe
+    
+    std::string number;
+    
+    std::cout << "Enter a number\n";
+    
+    std::cin >> number;
+    
+    
+    std::string grade;
+    
+    std::cout << "Enter a letter grade:\n";
+    
+    std::cin >> grade;
+    
+    
+    std::string percentage;
+    
+    std::cout << "Enter a number between 0 and 100:\n";
+    
+    std::cin >> percentage;
+    
+    
+    std::string firstName;
+    
+    std::cout << "Enter your first name:\n";
+    
+    std::cin >> firstName;
+
+
+//final product
+    
+    
+    std::cout << "Dear "<< teacherName << "\n";
+    
+    std::cout << "I am " << feeling << " that I was not able to complete my homework on time.\n";
+    
+    std::cout << "My pet " << animal << " ate my textbook, and I was only able to retrieve "<< number << " pages from its jaws.\n";
+    
+    std::cout << "I hope I can get at least a "<< grade << " because I've done "<< percentage << " % of the work.\n";
+    
+    std::cout << "Sincerely,\n";
+    
+    std::cout << firstName;
+    
+        return 0;
+}
