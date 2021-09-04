@@ -1,0 +1,61 @@
+
+#include <iostream>
+#include <iomanip>
+
+
+int main() {
+    
+    double mealCost;
+    double totalCostBeforeTip;
+    const double mealCostTax = 1.075;
+    
+    double tipPercent;
+    double tipDecimal;
+    double total;
+    double tipTotal;
+    double tax;
+    
+    std::cout << "Please input meal cost: ";
+    
+    std::cin >> mealCost;
+    
+    std::cout << "Please input tip percentage: ";
+    
+    std::cin >> tipPercent;
+    
+    
+    totalCostBeforeTip = mealCost * mealCostTax;
+    
+    tipDecimal = tipPercent / 100;
+    
+    tipTotal = tipDecimal * totalCostBeforeTip;
+    
+    tax = 0.075 * mealCost;
+    
+    total = tipTotal +totalCostBeforeTip;
+    
+    
+    std::cout << "Restaurant Bill\n";
+    std::cout << "\n";
+    std::cout << "====================\n";
+    std::cout << std::setprecision(5) << "Subtotal: $" << mealCost << "\n";
+    std::cout << std::setprecision(4) << "Taxes: $" << tax << "\n";
+    std::cout << std::setprecision(4) << "Tip: $" << tipTotal << "\n";
+    std::cout << "====================\n";
+    std::cout << "\n";
+    std::cout << std::setprecision(5) << "Total: $" << total << "\n";
+    
+    //Please input meal cost: 34
+    //Please input tip percentage: 15
+    
+    // Restaurant Bill
+    //====================
+    //Subtotal: $34.00
+    //Taxes: $2.55
+    //Tip: $5.10
+    //====================
+    //Total: $41.65
+    
+    
+    return 0;
+}
